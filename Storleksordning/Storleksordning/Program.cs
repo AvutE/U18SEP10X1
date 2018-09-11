@@ -43,7 +43,8 @@ namespace Storleksordning
                 Console.WriteLine(backwards);
             }
 
-            Console.ReadLine();
+            Console.WriteLine("\nKlicka på vilken knapp som helst för att avsluta!");
+            Console.ReadKey();
         }
     }
 }   

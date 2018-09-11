@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnikaOrd", "UnikaOrd\UnikaOrd.csproj", "{EA73B82E-77E9-4FD0-A71C-E1634A2CF51A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA73B82E-77E9-4FD0-A71C-E1634A2CF51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA73B82E-77E9-4FD0-A71C-E1634A2CF51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA73B82E-77E9-4FD0-A71C-E1634A2CF51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA73B82E-77E9-4FD0-A71C-E1634A2CF51A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0530F11-03F0-4C9A-ACCA-60B711EF7182}
+	EndGlobalSection
+EndGlobal
