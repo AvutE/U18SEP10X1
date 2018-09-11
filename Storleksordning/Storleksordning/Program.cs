@@ -16,23 +16,34 @@ namespace Storleksordning
 
             Regex antal = new Regex(@"(\w+|&)");
             MatchCollection match = antal.Matches(mening);
+            string[] matches = new string[match.Count];
+            int index = 0;
 
             foreach (Match ord in match)
             {
-                string[] matches = new string[match.Count];
-
-                Array.Sort(matches, (x, y) => x.Length.CompareTo(y.Length));
-
-                Console.WriteLine(ord);
+                matches[index++] = ord.ToString();
             }
 
-            char[] arr = mening.ToCharArray();
-            Array.Reverse(arr);
-            String backward = new string(arr);
+            Array.Sort(matches, (x, y) => x.Length.CompareTo(y.Length));
 
-            Console.WriteLine(backward);
+            for (int i = matches.GetLowerBound(0) ; i <= matches.GetUpperBound(0) ; i++)
+            {
+                Console.WriteLine(matches[i]);
+            }
+
+            Console.WriteLine();
+
+            for (int i = matches.GetUpperBound(0); i >= matches.GetLowerBound(0); i--)
+            {
+                string temp = matches[i];
+                char[] arr = temp.ToCharArray();
+                Array.Reverse(arr);
+                string backwards = new string(arr);
+
+                Console.WriteLine(backwards);
+            }
 
             Console.ReadLine();
         }
     }
-}
+}   
